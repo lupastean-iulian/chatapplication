@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Dal\\ChatApplication.Dal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj",
+        "projectName": "ChatApplication.Application",
+        "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj",
+        "packagesPath": "C:\\Users\\ilupa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilupa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj": {
+                "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Dal\\ChatApplication.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Dal\\ChatApplication.Dal.csproj",
+        "projectName": "ChatApplication.Dal",
+        "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Dal\\ChatApplication.Dal.csproj",
+        "packagesPath": "C:\\Users\\ilupa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Dal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilupa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj": {
+                "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj"
+              },
+              "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj": {
+                "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj",
+        "projectName": "ChatApplication.Domain",
+        "projectPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\ChatApplication.Domain.csproj",
+        "packagesPath": "C:\\Users\\ilupa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilupa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

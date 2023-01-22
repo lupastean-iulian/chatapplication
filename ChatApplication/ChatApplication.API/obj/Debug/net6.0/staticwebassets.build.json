@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c4zE7mS1YDe8OY5SVoQSSIaYuA4ahmpd1jCD1pMHA+g=",
+  "Source": "ChatApplication.API",
+  "BasePath": "_content/ChatApplication.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

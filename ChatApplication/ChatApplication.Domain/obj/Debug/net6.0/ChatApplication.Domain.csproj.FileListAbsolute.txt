@@ -1,0 +1,12 @@
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\bin\Debug\net6.0\ChatApplication.Domain.deps.json
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\bin\Debug\net6.0\ChatApplication.Domain.dll
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\bin\Debug\net6.0\ChatApplication.Domain.pdb
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.csproj.AssemblyReference.cache
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.AssemblyInfoInputs.cache
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.AssemblyInfo.cs
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.dll
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\refint\ChatApplication.Domain.dll
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ChatApplication.Domain.pdb
+C:\Users\ilupa\Desktop\ChatApplication\chatapplication\ChatApplication\ChatApplication.Domain\obj\Debug\net6.0\ref\ChatApplication.Domain.dll

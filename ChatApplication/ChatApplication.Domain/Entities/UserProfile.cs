@@ -6,7 +6,7 @@ namespace ChatApplication.Domain.Entities
     {
         public Guid Id { get; set; }
         public string DisplayName { get; set; }
-        public string Email { get; set; }
+        public string EmailAddress { get; set; }
 #nullable enable
         public ICollection<Message>? Messages { get; set; }
         public ICollection<Reply>? Replies { get; set; }

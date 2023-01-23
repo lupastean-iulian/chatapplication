@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v8zTe/yW3P2tOelCU0thQbkNDKJxugwEhIrZR2mdtunvPun808iVxKE/ehSWw7BtMl5qWasW871PTv2iaLVIbA==",
+  "dgSpecHash": "xeTPfhXRa3+ZSVKXi7BCldggSsF90VI1/hZLpMj7EVVJ5dF/uyK+awyJ/MzZr853S9+qPlYhQ9gT6l7KRTIHgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.API\\ChatApplication.API.csproj",
+  "projectFilePath": "C:\\Users\\ilupa\\Documents\\GitHub\\chatapplication\\ChatApplication\\ChatApplication.API\\ChatApplication.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ilupa\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\ilupa\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

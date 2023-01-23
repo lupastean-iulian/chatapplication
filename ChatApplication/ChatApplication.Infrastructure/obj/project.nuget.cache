@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A5PYeC3G0/FJWHVys4j4tsyruCvCgSHKd1oRMj4jPfOFUn2e4dq6TfsR+FMkL6zzLxYoHl0Y9MrSNhZfJH3cAA==",
+  "dgSpecHash": "y+XnBO3cqZcYt3abhsor9I9HN/UduVRuKpZmVc5W6fvIhGSKBU9sJp+Iikk+2bzcSNLc/HPn7ozO07QHZjPsDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Infrastructure\\ChatApplication.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ilupa\\Documents\\GitHub\\chatapplication\\ChatApplication\\ChatApplication.Infrastructure\\ChatApplication.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

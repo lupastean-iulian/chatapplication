@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UOQzDxbp1L6raUcFv5Gx2i929CFj6L0KqZrrZjAk3kV3wkvzZtYj5Ft4RVjZ4itwbRLIBuOPImtu5txyV/c2Vw==",
+  "dgSpecHash": "0WSPQzC0sCegyYbesXEyZXHJWlQRlKSruCwOji66xbhs8lgB846dS1nX3OG+zzMNtEEYPXeumjenAfPjiliycw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ilupa\\Desktop\\ChatApplication\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj",
+  "projectFilePath": "C:\\Users\\ilupa\\Documents\\GitHub\\chatapplication\\ChatApplication\\ChatApplication.Application\\ChatApplication.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ilupa\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\ilupa\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

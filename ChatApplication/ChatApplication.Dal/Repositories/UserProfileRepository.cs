@@ -1,6 +1,8 @@
 ﻿using ChatApplication.Dal.NewFolder;
+using ChatApplication.Domain.DTOs;
 using ChatApplication.Domain.Entities;
 using ChatApplication.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +19,43 @@ namespace ChatApplication.Dal.Repositories
             _ctx = ctx;
         }
 
-        public Task<bool> CheckUserExistsAsync(Guid userId)
+        public async Task<bool> CheckUserExistsAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            return await _ctx.UserProfiles.AnyAsync(x => x.Id.Equals(userId));
         }
 
-        public Task<UserProfile> CreateUserProfileAsync(UserProfile userProfile)
+        public async Task<UserProfile> CreateUserProfileAsync(UserProfile userProfile)
         {
-            throw new NotImplementedException();
+            _ctx.UserProfiles.Add(userProfile);
+            await _ctx.SaveChangesAsync();
+            return userProfile;
         }
 
-        public Task DeleteUserProfileAsync(UserProfile userProfile)
+        public async Task DeleteUserProfileAsync(UserProfile userProfile)
         {
-            throw new NotImplementedException();
+            _ctx.Remove(userProfile);
+            await _ctx.SaveChangesAsync();
         }
 
-        public Task<List<UserProfile>> GetAllUserProfilesAsync()
+        public async Task<List<UserProfile>> GetAllUserProfilesAsync()
         {
-            throw new NotImplementedException();
+            return await _ctx.UserProfiles.AsNoTracking().ToListAsync();
         }
 
-        public Task<UserProfile> GetUserProfileByIdAsync(Guid userId)
+        public async Task<UserProfile?> GetUserProfileByIdAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            return await _ctx.UserProfiles.FirstOrDefaultAsync(x => x.Id.Equals(userId));
         }
 
-        public Task<UserProfile> UpdateUserProfileAsync(UserProfile userProfile)
+        public async Task<UserProfile> UpdateUserProfileAsync(Guid userId, UserProfileUpdateDTO userProfile)
         {
-            throw new NotImplementedException();
+            var profileToUpdate = await GetUserProfileByIdAsync(userId);
+
+            profileToUpdate.DisplayName = userProfile.DisplayName;
+            profileToUpdate.EmailAddress = userProfile.EmailAddress;
+
+            await _ctx.SaveChangesAsync();
+            return profileToUpdate;
         }
     }
 }

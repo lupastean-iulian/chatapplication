@@ -1,6 +1,8 @@
 ﻿using ChatApplication.Dal.NewFolder;
+using ChatApplication.Domain.DTOs;
 using ChatApplication.Domain.Entities;
 using ChatApplication.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +19,43 @@ namespace ChatApplication.Dal.Repositories
             _ctx = ctx;
         }
 
-        public Task<bool> CheckIfMessageExistsAsync(Guid messageId)
+        public async Task<bool> CheckIfMessageExistsAsync(Guid messageId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Messages.AnyAsync(x => x.Id.Equals(messageId));
         }
 
-        public Task<Message> CreateMessageAsync(Message message)
+        public async Task<Message> CreateMessageAsync(Message message)
         {
-            throw new NotImplementedException();
+            _ctx.Messages.Add(message);
+            await _ctx.SaveChangesAsync();
+            return message;
         }
 
-        public Task DeleteMessageAsync(Message message)
+        public async Task DeleteMessageAsync(Message message)
         {
-            throw new NotImplementedException();
+            _ctx.Messages.Remove(message);
+            await _ctx.SaveChangesAsync();
         }
 
-        public Task<List<Message>> GetAllMessagesForUserAsync(Guid userId)
+        public async Task<List<Message>> GetAllMessagesForUserAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Messages.Where(x => x.UserId.Equals(userId)).ToListAsync();
         }
 
-        public Task<Message> GetMessageByIdAsync(Guid messageId)
+        public async Task<Message?> GetMessageByIdAsync(Guid messageId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Messages.FirstOrDefaultAsync(x => x.Id.Equals(messageId));
         }
 
-        public Task<Message> UpdateMessageAsync(Message message)
+        public async Task<Message> UpdateMessageAsync(Guid messageId, MessageUpdateDTO message)
         {
-            throw new NotImplementedException();
+            var messageToUpdate = await GetMessageByIdAsync(messageId);
+            messageToUpdate.Text = message.Text;
+            messageToUpdate.LastEditDate = DateTime.UtcNow;
+
+            await _ctx.SaveChangesAsync();
+
+            return messageToUpdate;
         }
     }
 }

@@ -25,7 +25,12 @@ namespace ChatApplication.Application.UserProfiles.Commands
 
         public async Task<UserProfile> Handle(CreateUserProfileCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _userProfileRepository.CreateUserProfileAsync(new UserProfile
+            {
+                Id = Guid.NewGuid(),
+                DisplayName = request.DisplayName,
+                EmailAddress = request.EmailAddress,
+            });
         }
     }
 }

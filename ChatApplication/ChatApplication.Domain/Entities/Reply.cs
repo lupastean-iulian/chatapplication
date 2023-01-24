@@ -12,7 +12,7 @@ namespace ChatApplication.Domain.Entities
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public Guid MessageId { get; set; }
-        public string? Text { get; set; }
+        public string Text { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime LastEditDate { get; set; }
 #nullable enable

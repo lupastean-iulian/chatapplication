@@ -1,6 +1,8 @@
 ﻿using ChatApplication.Dal.NewFolder;
+using ChatApplication.Domain.DTOs;
 using ChatApplication.Domain.Entities;
 using ChatApplication.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +19,43 @@ namespace ChatApplication.Dal.Repositories
             _ctx = ctx;
         }
 
-        public Task<Reply> CreateReplyAsync(Reply reply)
+        public async Task<Reply> CreateReplyAsync(Reply reply)
         {
-            throw new NotImplementedException();
+            _ctx.Replies.Add(reply);
+            await _ctx.SaveChangesAsync();
+            return reply;
         }
 
-        public Task DeleteReplyAsync(Reply reply)
+        public async Task DeleteReplyAsync(Reply reply)
         {
-            throw new NotImplementedException();
+            _ctx.Replies.Remove(reply);
+            await _ctx.SaveChangesAsync();
         }
 
-        public Task<List<Reply>> GetAllRepliesForMessageAsync(Guid messageId)
+        public async Task<List<Reply>> GetAllRepliesForMessageAsync(Guid messageId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Replies.Where(x => x.MessageId.Equals(messageId)).AsNoTracking().ToListAsync();
         }
 
-        public Task<List<Reply>> GetAllRepliesForUserAsync(Guid userId)
+        public async Task<List<Reply>> GetAllRepliesForUserAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Replies.Where(x => x.UserId.Equals(userId)).AsNoTracking().ToListAsync();
         }
 
-        public Task<Reply> GetReplyByIdAsync(Guid replyId)
+        public async Task<Reply?> GetReplyByIdAsync(Guid replyId)
         {
-            throw new NotImplementedException();
+            return await _ctx.Replies.FirstOrDefaultAsync(x => x.Id.Equals(replyId));
         }
 
-        public Task<Reply> UpdateReplyAsync(Reply reply)
+        public async Task<Reply> UpdateReplyAsync(Guid replyId, ReplyUpdateDTO reply)
         {
-            throw new NotImplementedException();
+            var replyToUpdate = await GetReplyByIdAsync(replyId);
+            replyToUpdate.Text = reply.Text;
+            replyToUpdate.LastEditDate = DateTime.UtcNow;
+
+            await _ctx.SaveChangesAsync();
+
+            return replyToUpdate;
         }
     }
 }
